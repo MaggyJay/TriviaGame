@@ -1,34 +1,44 @@
 body, html {
     width: 100%;
     height: 100%;
-  
-   
-    
+    font-family: 'Nanum Pen Script', cursive;
 }
+
 body {
+    font-size: 30px;
     background: url("../images/sims-wallpaper.jpg");
     /* background-position: center; */
     /* object-fit: scale-down; */
     width: 100vw;
     height: 100vh;
     background-size: contain;
-    
-     background-repeat: no-repeat;
-     position: fixed;
+    background-repeat: no-repeat;
+    position: fixed;
     /* text-align: center; */
     /* background: url("../images/sims-wallpaper.jpg"); */
-
 }
 
 #start-button {
     margin: 20px;
-    
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #7299ac;
+    color: #010f6e;
+}
+
+#submit-button {
+    margin: 20px;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 25px;
+    background-color: #7299ac;
+    color: #010f6e;
 }
 
 #container {
-    background-color:
-    white;
-    opacity: 0.85;
+    background-color: white;
+    /* opacity: 0.85; */
     /* border-color: #2d6db4;
     border-width: 10px;
     border-style: dashed; */
@@ -39,13 +49,11 @@ body {
     text-align: center;
 }
 
-h1{
-    color:white;
+h1 {
+    color: white;
 }
 
 #simslogo {
     width: 65%;
     height: 50%;
-    
-
 }
