@@ -6,10 +6,16 @@ body, html {
     
 }
 body {
-    background-size: auto;
     background: url("../images/sims-wallpaper.jpg");
-    /* background-repeat: no-repeat; */
-    text-align: center;
+    /* background-position: center; */
+    /* object-fit: scale-down; */
+    width: 100vw;
+    height: 100vh;
+    background-size: contain;
+    
+     background-repeat: no-repeat;
+     position: fixed;
+    /* text-align: center; */
     /* background: url("../images/sims-wallpaper.jpg"); */
 
 }
@@ -21,14 +27,16 @@ body {
 
 #container {
     background-color:
-    #81e43b;
-    border-color: #2d6db4;
+    white;
+    opacity: 0.85;
+    /* border-color: #2d6db4;
     border-width: 10px;
-    border-style: dashed;
+    border-style: dashed; */
     overflow: auto;
     height: 650px;
     width: 750px;
     margin-top: 25px;
+    text-align: center;
 }
 
 h1{
