@@ -3,16 +3,27 @@ $(document).ready(function () {
     var card = $('#container');
     var countStartNumber = 30;
 
-    $('#start-button').on('click', function () {
-        console.log('here we go again')
+    // $('#start-button').on('click', function () {
+    //     console.log('here we go again')
+    //     $('#start-button').hide();
+    //     game.loadQuestion();
+    // });
+
+    $(document).on("click", "#start-button", function () {
         $('#start-button').hide();
+        $("#counter").prepend("<h2>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
         game.loadQuestion();
-    });
+
+    })
 
     $(document).on('click', '.answer-button', function (e) {
         game.clicked(e);
         //we're passing e, we're passing the event, which is what's being clicked
     })
+
+    $(document).on("click", "#start-over", function () {
+        game.reset();
+    });
     //Questions
 
     var questions = [{
@@ -84,13 +95,16 @@ $(document).ready(function () {
         },
         nextQuestion: function () {
             game.counter = 30;
-            $('#counter').html(game.counter);
+            $('#counter-number').text(game.counter);
             game.currentQuestion++;
             game.loadQuestion();
 
         },
         timeUp: function () {
             clearInterval(timer);
+
+            $('#counter-number').html(game.counter);
+
             $('#subwrapper').html('<h2>OUT OF TIME</h2>');
             $('#subwrapper').append('<h3>The correct answer was: ' + questions[game.currentQuestion].correctAnswer + '</h3');
             if (game.currentQuestion === questions.length - 1) {
@@ -147,71 +161,15 @@ $(document).ready(function () {
 
         },
         reset: function () {
+            game.currentQuestion = 0;
+            game.counter = 0;
+            game.correct = 0;
+            game.incorrect = 0;
+            game.loadQuestion();
 
         }
+
 
     }
 
 });
-
-// $(document).ready(function () {
-//     var number = 60;
-//     var intervalID;
-
-//     $('#finished-quiz').hide();
-//     $('#sim-quiz').hide();
-
-
-//     $('#start-button').on('click', function () {
-//         $('#start-button').hide();
-//         $('#sim-quiz').show();
-
-//         //timer();
-
-//         var timer = setInterval(function () {
-
-//             number -= 1;
-//             clearInterval(intervalID);
-
-//             if (number <= 0) {
-
-//                 clearInterval(timer);
-//                 alert('Timer works!');
-
-//                 $('#sim-quiz').hide();
-//                 $('#finished-quiz').show();
-//                 $('#finished-quiz').html('<p> Correct Answers: ' + score);
-//             }
-
-
-
-
-
-//             $('#timer').append(number);
-//             $('#timer').html('<p> Time Remaining: ' + number + '</p>');
-
-//         }, 1000);
-
-
-//     })
-
-
-
-//     var answers = ["B", "D", "B", "E", "C", "C", "E", "A", "D"];
-
-//     total = answers.length;
-
-//     function checkAnswer(radioName) {
-//         var radios = document.getElementById(radioName);
-//         for (var y = 0; y < radios.length; y++)
-//             if (radios[y].checked) return radios[y].value;
-//     }
-
-//     function getScore() {
-//         var score = 0;
-//         for (var i = 0; i < total; i++)
-//             if (checkAnswer("question" + i) === answers[i]) score += 1;
-//         return score;
-//     }
-// })
-
