@@ -38,10 +38,6 @@ body {
 
 #container {
     background-color: white;
-    /* opacity: 0.85; */
-    /* border-color: #2d6db4;
-    border-width: 10px;
-    border-style: dashed; */
     overflow: auto;
     height: 650px;
     width: 750px;
@@ -50,7 +46,7 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
 }
 
 #simslogo {
