@@ -51,5 +51,21 @@ h1 {
 
 #simslogo {
     width: 65%;
-    height: 50%;
+    height: 45%;
+}
+
+.answer-button{
+    background-color: #84b0ee;
+    color: #0f3968;
+    border-color: #3a61a2;
+    width: 250px;
+    height: 75px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    box-shadow: #0f3968 5px 5px 10px;
+}
+.answer-button:hover{
+    background-color: #458CA9;
 }
