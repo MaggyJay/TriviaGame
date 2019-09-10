@@ -117,7 +117,7 @@ $(document).ready(function () {
         },
         results: function () {
             clearInterval(timer);
-            $('#subwrapper').html('<h2>All done, heres how you did!</h2>');
+            $('#subwrapper').html('<h2>All done, here\'s how you did!</h2>');
             $("#counter-number").text(game.counter);
             $('#subwrapper').append("<h3>Correct Answers: " + game.correct + "</h3>");
             $('#subwrapper').append("<h3>Incorrect Answers: " + game.incorrect + "</h3>");
