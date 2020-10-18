@@ -8,9 +8,11 @@ $(document).ready(function () {
     //     $('#start-button').hide();
     //     game.loadQuestion();
     // });
+    $('#container').hide();
 
     $(document).on("click", "#start-button", function () {
-        $('#start-button').hide();
+        $('#start-button').replaceWith( $('#container') );
+        $('#container').show();
         $("#counter").prepend("<h2>Time Remaining: <span id='counter-number'>30</span> Seconds</h2>");
         game.loadQuestion();
 
@@ -24,6 +26,8 @@ $(document).ready(function () {
     $(document).on("click", "#start-over", function () {
         game.reset();
     });
+
+    
     //Questions
 
     var questions = [{
@@ -31,11 +35,13 @@ $(document).ready(function () {
         answers: ["Sid Meier", "Will Wright", "Hideo Kojima", "Todd Howard"
         ],
         correctAnswer: "Will Wright"
-    }, {
-        question: "What was the inspiration behind The Sims?",
-        answers: ["The creator of the sims lost their home in a house fire", "Home architecture software", "The creator had a dream about the concept", "A & B", "All"],
-        correctAnswer: "A & B"
-    }, {
+    }, 
+    // {
+    //     question: "What was the inspiration behind The Sims?",
+    //     answers: ["The creator of the sims lost their home in a house fire", "Home architecture software", "The creator had a dream about the concept", "A & B", "All"],
+    //     correctAnswer: "A & B"
+    // }, 
+    {
         question: "The first Sims PC game was released on: ",
         answers: ["June 2001", "February 2000", "November 1999", "January 1998"],
         correctAnswer: "February 2000"
@@ -160,16 +166,15 @@ $(document).ready(function () {
             console.log("WRONG");
 
         },
+
         reset: function () {
             game.currentQuestion = 0;
-            game.counter = 0;
+            game.counter = 30;
             game.correct = 0;
             game.incorrect = 0;
             game.loadQuestion();
 
         }
-
-
     }
 
 });
