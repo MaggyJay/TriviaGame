@@ -81,8 +81,10 @@ h1 {
     color: black;
 }
 
-.triva-header {
+.trivaheader {
     text-align: center;
+    color: #151716;
+    letter-spacing: 0.25em;
 }
 
 /* .img-fluid {
@@ -104,6 +106,12 @@ h1 {
 
 #simgroup {
     
+}
+
+#simsblop{
+    height: 70px;
+    width: 50px;
+    float: right;
 }
 
 .answer-button {
