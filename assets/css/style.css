@@ -73,6 +73,7 @@ h1 {
     margin: 25px;
     text-align: center;
     position: relative;
+    z-index: 1;
     
 }
 
@@ -99,6 +100,10 @@ h1 {
     /* align-content: center; */
     /* width: 65%;
     height: 45%; */
+}
+
+#simgroup {
+    
 }
 
 .answer-button {
