@@ -3,7 +3,6 @@ body, html {
     min-height: 100%;
     font-family: 'Bebas Neue', cursive;
     background-size: cover;
-    /* font-family: 'Crimson Text', serif; */
 }
 
 body {
@@ -16,34 +15,20 @@ body {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#24804B", endColorstr="#30A16C", GradientType=1);
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-color: #91cb5d;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23f8cfef' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
-    /* background-color: #66bb46; */
-    /* background: url("../images/simsplumbob.jpg"); */
-    /* background-position: center; */
-    /* object-fit: scale-down; */
-    /* width: 100vw;
-    height: 100vh; */
-    /* background-size: cover;
-    background-repeat: no-repeat; */
-    /* position: fixed; */
-    /* text-align: center; */
-    /* background: url("../images/sims-wallpaper.jpg"); */
 }
 
 h1 {
     text-align: center;
     margin-bottom: 50px;
-    
 }
-.buttoncontainer{
-    /* height: 15.5%; */
+
+.buttoncontainer {
     position: relative;
 }
+
 #start-button {
-  
-   height: 182px;
-   width: 188px;
+    height: 182px;
+    width: 188px;
     padding: 20px;
     margin: 0;
     position: absolute;
@@ -51,7 +36,6 @@ h1 {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    
 }
 
 #submit-button {
@@ -66,14 +50,10 @@ h1 {
 #container {
     padding: 50px;
     background-color: white;
-    /* overflow: auto; */
-    /* height: 650px;
-    width: 750px; */
     margin: 25px;
     text-align: center;
     position: relative;
     z-index: 1;
-    
 }
 
 h1 {
@@ -87,45 +67,31 @@ h1 {
     letter-spacing: 0.25em;
 }
 
-/* .img-fluid {
-    max-width: 100%;
-    height: auto;
-  } */
-
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-#simslogo {
-    /* align-content: center; */
-    /* width: 65%;
-    height: 45%; */
-}
+
 
 #simgroup {
     margin-top: 80px;
 }
 
-#simsblop{
+#simsblop {
     height: 70px;
     width: 50px;
     float: right;
 }
 
 .answer-button {
-    
     background-color: #a6c91b;
     background-image: -webkit-linear-gradient(#a6c91b, #48b038);
     background-image: linear-gradient(#a6c91b, #48b038);
     font-family: Arial, sans-serif;
-    /* background-color: #a6cf4d;
-    color: #0f3968; */
-    /* border-color: #5ab531; */
     width: 250px;
     height: 75px;
-    /* font-size: 20px; */
     padding: 10px;
     margin: 10px;
     border-radius: 25px;
@@ -143,5 +109,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* height: 2.5rem; */
-  }
+}

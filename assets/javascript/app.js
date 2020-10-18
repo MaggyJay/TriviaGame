@@ -3,11 +3,6 @@ $(document).ready(function () {
     var card = $('#container');
     var countStartNumber = 30;
 
-    // $('#start-button').on('click', function () {
-    //     console.log('here we go again')
-    //     $('#start-button').hide();
-    //     game.loadQuestion();
-    // });
     $('#container').hide();
 
     $(document).on("click", "#start-button", function () {
@@ -35,12 +30,7 @@ $(document).ready(function () {
         answers: ["Sid Meier", "Will Wright", "Hideo Kojima", "Todd Howard"
         ],
         correctAnswer: "Will Wright"
-    }, 
-    // {
-    //     question: "What was the inspiration behind The Sims?",
-    //     answers: ["The creator of the sims lost their home in a house fire", "Home architecture software", "The creator had a dream about the concept", "A & B", "All"],
-    //     correctAnswer: "A & B"
-    // }, 
+    },  
     {
         question: "The first Sims PC game was released on: ",
         answers: ["June 2001", "February 2000", "November 1999", "January 1998"],
