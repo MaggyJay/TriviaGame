@@ -73,7 +73,10 @@ h1 {
     margin-right: auto;
 }
 
-
+#simslogo{
+    filter: drop-shadow(10px 4px 4px #ffffff);
+    margin-bottom: 5%;
+}
 
 #simgroup {
     margin-top: 80px;
