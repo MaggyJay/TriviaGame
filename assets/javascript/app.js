@@ -40,7 +40,7 @@ $(document).ready(function () {
         answers: ["Perceptive", "Over- Emotional", "Inappropriate", "Can't Stand Art", "Sports Enthusiasts"],
         correctAnswer: "Sports Enthusiasts"
     }, {
-        question: "Which one of these artists have NOT done an original simlish music for the games [Hint: Including PC & Console games]?",
+        question: "Which one of these artists have NOT done an original simlish song for the games [Hint: Including PC & Console games]?",
         answers: ["Carly Rae Jepsen", "Black Eyed Peas", "P!nk", "Toni Braxton", "Paramore", "Chris Brown"],
         correctAnswer: "P!nk"
     }, {
