@@ -90,10 +90,11 @@ h1 {
     background-image: -webkit-linear-gradient(#a6c91b, #48b038);
     background-image: linear-gradient(#a6c91b, #48b038);
     font-family: Arial, sans-serif;
+    position: relative;
+    max-width: 100%;
     width: 250px;
     height: 75px;
-    padding: 10px;
-    margin: 10px;
+    margin: 10px 5px 10px 5px;
     border-radius: 25px;
     box-shadow: #0f3968 5px 5px 10px;
 }
